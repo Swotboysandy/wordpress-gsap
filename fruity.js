@@ -3,7 +3,7 @@
 
 <script>
 // Section data
-let h1Texts = ["Pear", "Apple", "Exotic"];
+let h1Texts = ["Guava", "Strawberry", "Grapes"];
 let logoColors = ["var(--pear-logo)", "var(--apple-logo)", "var(--exotic-logo)"];
 let keyframes = ["wave-pear-effect", "wave-apple-effect", "wave-exotic-effect"];
 let productIds = ["9797", "9409", "9393"]; // Add-to-cart products per slide
@@ -33,7 +33,7 @@ let currentPosition = 0;
 const addToCartWrapper = document.createElement("div");
 addToCartWrapper.id = "add-to-cart-wrapper";
 addToCartWrapper.style.cssText = `
-  position: fixed;
+  position: fixed;  
   bottom: 60px;
   left: 50%;
   transform: translateX(-50%);
@@ -47,15 +47,15 @@ btn.setAttribute("data-product_id", productIds[currentIndex]);
 btn.className = "button product_type_simple add_to_cart_button ajax_add_to_cart";
 btn.textContent = "Add to Cart";
 Object.assign(btn.style, {
-  padding: "16px 30px",
-  background: "#fff",
-  color: "#000",
-  borderRadius: "12px",
-  fontWeight: "bold",
-  fontSize: "18px",
-  boxShadow: "0 4px 12px rgba(0,0,0,0.2)",
-  textDecoration: "none",
-  cursor: "pointer",
+padding: 16px 30px;
+background: rgb(255 255 255 / 0%);
+color: rgb(255 255 255);
+border-radius: 30px;
+font-weight: bold;
+font-size: 18px;
+box-shadow: rgb(0 0 0 / 20%) 0px 2px 6px;
+text-decoration: none;
+cursor: pointer;
 });
 
 addToCartWrapper.appendChild(btn);
